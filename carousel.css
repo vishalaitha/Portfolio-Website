@@ -1,0 +1,165 @@
+.shoppingpages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 53%; */
+    /* align-items: center; */
+    /* padding:100px */
+}
+.home{
+    /* position: relative; */
+    /* display: inline-block; */
+    justify-content: center;
+}
+.container{
+    padding: 2rem;
+}
+.slider{
+    margin:20px;
+    height: 500px;
+    /* display: flex; */
+    justify-content: center;
+    border:1px solid black;
+}
+.childslider{
+    display: flex;
+}
+.buynow{
+    display: flex;
+    justify-content: center;
+}
+.carouseltop{
+    /* position: flex; */
+    /* justify-content: center; */
+    /* display: flex; */
+    border:.5px solid black;
+    background-color: 1px solid black;
+    position: relative;
+    height: 500px;
+    width: 70%;
+    margin: 10px auto;
+    object-fit: cover;
+
+}
+.carousel__track li img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel__image {
+    width: 100%;
+    /* size:100px; */
+    /* object-fit: cover; */
+    /* object-fit:cover; */
+    object-fit:fill;
+    height:100%;
+}
+
+.carousel__track-container{
+    position: relative;
+    background: rgba(17, 223, 17, 0.324);
+    height: 100%;
+    /* padding:10px; */
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.carousel__track{
+    
+    padding:0;
+    margin: 0;
+    list-style:none;
+    position: relative;
+    height: 100%;
+    transition: transform 350ms ease-in;
+    /* border:10px black; */
+}
+
+.carousel__slide{
+    position: absolute;
+    justify-content: center;
+    top:0;
+    bottom:0;
+    width: 100%;
+}
+
+.carousel__slide img{
+    transition: all 0.3s;
+    transform: scale(1);
+}
+.carousel__slide:hover img{
+    transform: scale(1.02);
+ }
+/* .carousel__slide a img{
+    object-fit: cover;
+} */
+
+.carousel__button {
+    position: absolute;
+    top:50%;
+    /* height: 200px; */
+    transform:translateY(-50%);
+    background: transparent;
+    border:0;
+    cursor: pointer;
+}
+.carousel__button img{
+    /* margin:20px; */
+    width: 60px;
+}
+.carousel__button--left{
+    left:-85px;
+}
+.carousel__button--right{
+    right:-85px;
+}
+
+.carousel__nav{
+    /* background:pink; */
+    justify-content: center;
+    display: flex;
+    /* margin:10px */
+    padding:10px 0;
+}
+
+.carousel__indicator{
+    border:0;
+    border-radius:50%;
+    width:20px;
+    height:20px;
+    background:rgba(255, 255, 255, 0.3);
+    margin:25px;
+    cursor:pointer;
+}
+
+.carousel__indicator.current-slide{
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.is-hidden{display: none;}
+
+.highlights-grid{
+    /* overflow: hidden; */
+    margin-top: 10px;
+    margin-bottom:10px;
+    border:10px solid brown;
+    position: relative;
+    /* justify-content: center; */
+    /* background-color: aqua; */
+    display: grid;
+    /* align-items: center; */
+    /* gap: 10px; */
+    /* grid-gap: 30px; */
+    grid-template-columns: 2fr 1fr 1fr;
+    /* grid-template-rows: 100% 50% ; */
+    height: 520px;
+    width: 100%;
+    grid-template-areas:
+        "header side1 side2"
+        "header side3 side4"
+    ;
+}
+/* .heading h1{
+    border:1px solid black;
+    justify-items: center;
+} */
